@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+    <test name="PurchaseTest">
+        <classes>
+            <class name="tests.PurchaseProductTest"/>
+        </classes>
+    </test>
+    <test name="RemoveFromCartTest">
+        <classes>
+            <class name="tests.RemoveElementsFromCartTest"/>
+        </classes>
+    </test>
+    <test name="LogoutTest">
+        <classes>
+            <class name="tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
