@@ -37,16 +37,15 @@ public class CartPage extends BasePage {
     }
 
     /**
-     * Checks if the shopping cart is empty.
+     * Checks if the shopping cart is empty by checking the presence of the spam tag
      *
      * @return true if the cart is empty, false otherwise.
      */
     public boolean isCartEmpty() {
         try {
-            WebElement cartBadge = shoppingCartBadge.findElement(By.tagName("span"));
-            int cartItemCount = Integer.parseInt(cartBadge.getText().trim());
-            return cartItemCount == 0;
-        } catch (org.openqa.selenium.NoSuchElementException | NumberFormatException e){
+            shoppingCartBadge.findElement(By.tagName("span"));
+            return false;
+        } catch (org.openqa.selenium.NoSuchElementException e){
             return true;
         }
     }

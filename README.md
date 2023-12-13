@@ -4,6 +4,7 @@ This project automates test scenarios for the web application https://www.sauced
 The project is organized with the following structure:
 - src/test/java/pages
 - src/test/java/tests
+- src/test/java/data
 - src/test/java/utils
 - pom.xml
 - suite.xml
@@ -26,7 +27,7 @@ The project is organized with the following structure:
 1. Clone the repository to your local machine.
 2. Open the project in your preferred Java IDE.
 3. Configure the Selenium WebDriver and TestNG dependencies.
-4. Run the test classes individually or create a TestNG suite for organized execution.
+4. Run the test classes individually or run the TestNG suite.
 
 ## Dependencies
 - Selenium WebDriver

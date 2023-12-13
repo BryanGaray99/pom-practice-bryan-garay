@@ -45,13 +45,4 @@ public class ProductPage extends BasePage {
     public void logout() {
         logoutButton.click();
     }
-
-    /**
-     * Checks if the current page is the product page.
-     *
-     * @return true if on the product page, false otherwise.
-     */
-    public boolean isProductPage() {
-        return driver.getCurrentUrl().contains("https://www.saucedemo.com/inventory.html");
-    }
 }

@@ -20,10 +20,13 @@ public class LogoutTest extends BaseTest {
      */
     @Test
     public void logoutTest() {
+        // Logout in Product Page
         ProductPage productPage = new ProductPage(driver);
-        LoginPage loginPage = new LoginPage(driver);
         productPage.openMenu();
         productPage.logout();
+
+        // Verify we are in the Login Page
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.isLoginPage();
     }
 }
